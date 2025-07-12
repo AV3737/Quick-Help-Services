@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Service Blocks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffe0e9, #e0f7ff);
+      padding: 30px 15px;
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 12px;
+      object-fit: contain;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* 1 column on mobiles */
+    @media (max-width: 599px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      .card {
+        padding: 16px;
+        min-height: 160px;
+      }
+      .card img {
+        width: 60px;
+        height: 60px;
+      }
+      .card h3 {
+        font-size: 14px;
+      }
+    }
+
+    /* 2 columns on tablets */
+    @media (min-width: 600px) and (max-width: 991px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* 3 columns on laptops and desktops */
+    @media (min-width: 992px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <div class="card">
+      <a href="#"><img src="IMAGE.png" alt="PAN CARD"></a>
+      <h3>PAN CARD</h3>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="IMAGE2.jpg" alt="AADHAAR CARD"></a>
+      <h3>AADHAAR CARD</h3>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="image3.png" alt="DRIVING LICENCE"></a>
+      <h3>DRIVING LICENCE</h3>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="IMAGE7.PNG" alt="VOTER ID CARD"></a>
+      <h3>VOTER ID CARD</h3>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="image5.png" alt="DOMICILE CERTIFICATE"></a>
+      <h3>DOMICILE CERTIFICATE</h3>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="image8.png" alt="INCOME CERTIFICATE"></a>
+      <h3>INCOME CERTIFICATE</h3>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="IMAGE9.png" alt="MARRIAGE CERTIFICATE"></a>
+      <h3>MARRIAGE CERTIFICATE</h3>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="IMAGE6.png" alt="GAZETTE NAME CHANGE"></a>
+      <h3>GAZETTE (NAME CHANGE)</h3>
+    </div>
+    <div class="card">
+      <a href="#"><img src="IMAGE1.png" alt="UDYAM AADHAAR"></a>
+      <h3>UDYAM AADHAAR (MSME)</h3>
+    </div>
+  </div>
+
+</body>
+</html>
